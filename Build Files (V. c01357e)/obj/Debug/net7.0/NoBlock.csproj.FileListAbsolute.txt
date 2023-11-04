@@ -1,0 +1,14 @@
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\bin\Debug\net7.0\NoBlock.deps.json
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\bin\Debug\net7.0\NoBlock.dll
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\bin\Debug\net7.0\NoBlock.pdb
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\bin\Debug\net7.0\CounterStrikeSharp.API.dll
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\obj\Debug\net7.0\NoBlock.csproj.AssemblyReference.cache
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\obj\Debug\net7.0\NoBlock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\obj\Debug\net7.0\NoBlock.AssemblyInfoInputs.cache
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\obj\Debug\net7.0\NoBlock.AssemblyInfo.cs
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\obj\Debug\net7.0\NoBlock.csproj.CoreCompileInputs.cache
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\obj\Debug\net7.0\NoBlock.csproj.CopyComplete
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\obj\Debug\net7.0\NoBlock.dll
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\obj\Debug\net7.0\refint\NoBlock.dll
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\obj\Debug\net7.0\NoBlock.pdb
+C:\Users\Christoffer\Desktop\CSSharp\NoBlock\obj\Debug\net7.0\ref\NoBlock.dll
