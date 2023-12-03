@@ -42,17 +42,14 @@ public class NoBlock : BasePlugin
     public override string ModuleDescription => "Allows for players to walk through each other without being stopped due to colliding.";
     public override string ModuleVersion => "V. 1.0.1 [Beta]";
 
-    // Creates a string which we will use to store the server's operating system name within
-    string ServerOperatingSystem = "";
+    // Sets the correct offset data for our collision rules change in accordance with the server's operating system
+    private readonly WIN_LINUX<int> OnCollisionRulesChangedOffset = new WIN_LINUX<int>(173, 172);
 
     // This happens when the plugin is loaded
     public override void Load(bool hotReload)
     {
         // Registers and hooks in to the game events we intend to use
         RegisterEventHandler<EventPlayerSpawn>(Event_PlayerSpawn, HookMode.Post);
-
-        // Retrieves the type of operating system that is used by the server and stores it within our ServerOperatingSystem variable
-        ServerOperatingSystem = new WIN_LINUX<string>("Windows", "Linux").Get();
     }
 
 
@@ -108,29 +105,11 @@ public class NoBlock : BasePlugin
         // Changes the player's CollisionAttribute to the collision type used for dissolving objects 
         pawn.Value.Collision.CollisionAttribute.CollisionGroup = (byte)CollisionGroup.COLLISION_GROUP_DISSOLVING;
 
-        // If the server is running with a Linux operating system then execute this section
-        if(ServerOperatingSystem == "Linux")
-		{
-            // Updates the CollisionRulesChanged for the specific player
-            VirtualFunctionVoid<nint> collisionRulesChanged = new VirtualFunctionVoid<nint>(pawn.Value.Handle, 172);
+        // Updates the CollisionRulesChanged for the specific player
+        VirtualFunctionVoid<nint> collisionRulesChanged = new VirtualFunctionVoid<nint>(pawn.Value.Handle, OnCollisionRulesChangedOffset.Get());
 
-            // Invokes the updated CollisionRulesChanged information to ensure the player's collision is correctly set
-            collisionRulesChanged.Invoke(pawn.Value.Handle);
-
-            return;
-        }
-
-        // If the serveer is running with a Windows operating system then execute this section
-        else
-        {
-            // Updates the CollisionRulesChanged for the specific player
-            VirtualFunctionVoid<nint> collisionRulesChanged = new VirtualFunctionVoid<nint>(pawn.Value.Handle, 173);
-
-            // Invokes the updated CollisionRulesChanged information to ensure the player's collision is correctly set
-            collisionRulesChanged.Invoke(pawn.Value.Handle);
-
-            return;
-        }
+        // Invokes the updated CollisionRulesChanged information to ensure the player's collision is correctly set
+        collisionRulesChanged.Invoke(pawn.Value.Handle);
     }
 }
 
