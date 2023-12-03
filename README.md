@@ -10,13 +10,14 @@ In order for the plugin to work, you must have the following installed:
 
 
 ## Installation
-1) Download the contents and open the downloaded zip file.
-2) Drag the files within the 'Gameserver' folder into your server's csgo/ directory.
-3) Restart your server, or change the map.
+To install this on your server do the following:
+1). Download the contents and open the downloaded zip file.
+2). Drag the files within the 'csgo' folder into your server's csgo/ directory.
+3). Restart the server.
 
 
 ## Known Bugs & Issues
-- None.
+- Crouching whilst inside of an enemy player, will not allow you to stand up again, until you are no longer inside of the enemy player.
 
 
 ## Future development plans
@@ -29,5 +30,7 @@ Should you run into a bug that isn't listed here, then please report it by creat
 
 
 ## Credits
-A Big thank you to [WD-](https://github.com/shobhit-pathak/)  for helping me find a way to change the value of the player's collision group.
-It took us a lot of testing, before we finally found the correct collision group value to use for CS2.
+A Big thank you to:
+- [WD-](https://github.com/shobhit-pathak/) for helping me find a way to change the value of the player's collision group.
+- KillStr3aK 
+- [KillStr3aK](https://github.com/KillStr3aK/) for helping with windows and linux checks and collision rule changes.

@@ -8,10 +8,8 @@
 
   <ItemGroup>
     <Reference Include="CounterStrikeSharp.API">
-       <HintPath>YOUR CSSHARP FOLDER DESTINATION HERE/NoBlock/CounterStrikeSharp.API.dll</HintPath>
+       <HintPath>YOUR PATH HERE/CounterStrikeSharp.API.dll</HintPath>
     </Reference>
   </ItemGroup>
 
-
 </Project>
-
