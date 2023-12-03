@@ -1,7 +1,7 @@
 # No Block
 ## ABOUT THE PLUGIN
 With the 'No Block' plugin installed, and running on your server. 
-Players will then be allowed to walk through each other without being stopped due to collision settings, regardless of their team affiliation. Players can still damage each other with bullets and weapons, like they would normally do.
+Players will then be allowed to walk through each other without being stopped due to collision settings, regardless of their team affiliation. Players can still damage each other with bullets and weapons as they would normally do.
 
 
 ## Requirements
@@ -17,7 +17,7 @@ To install this on your server do the following:
 
 
 ## Known Bugs & Issues
-- Crouching whilst inside of an enemy player, will not allow you to stand up again, until you are no longer inside of the enemy player.
+- Crouching whilst inside of an enemy player, will not allow you to stand up again until you are no longer inside of the enemy player.
 
 
 ## Future development plans
@@ -32,5 +32,4 @@ Should you run into a bug that isn't listed here, then please report it by creat
 ## Credits
 A Big thank you to:
 - [WD-](https://github.com/shobhit-pathak/) for helping me find a way to change the value of the player's collision group.
-- KillStr3aK 
-- [KillStr3aK](https://github.com/KillStr3aK/) for helping with windows and linux checks and collision rule changes.
+- [KillStr3aK](https://github.com/KillStr3aK/) for helping with Windows and Linux checks and collision rule changes.
