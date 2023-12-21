@@ -43,7 +43,7 @@ public class NoBlock : BasePlugin
     public override string ModuleVersion => "V. 1.0.1 [Beta]";
 
     // Sets the correct offset data for our collision rules change in accordance with the server's operating system
-    private readonly WIN_LINUX<int> OnCollisionRulesChangedOffset = new WIN_LINUX<int>(173, 172);
+    private readonly WIN_LINUX<int> OnCollisionRulesChangedOffset = new WIN_LINUX<int>(174, 173);
 
     // This happens when the plugin is loaded
     public override void Load(bool hotReload)
